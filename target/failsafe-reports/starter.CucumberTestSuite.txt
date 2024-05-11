@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: starter.CucumberTestSuite
+-------------------------------------------------------------------------------
+Tests run: 31, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 24.032 s <<< FAILURE! - in starter.CucumberTestSuite
+As a user, I cannot register with invalid email(Register)  Time elapsed: 0.393 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path error doesn't match.
+Expected: ERROR: invalid email
+  Actual: ERROR: duplicate key value violates unique constraint \"users_email_key\" (SQLSTATE 23505)
+
+
+As a user, I cannot create order with no quantity(Create Order)  Time elapsed: 0.477 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <200>.
+
+
